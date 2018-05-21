@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.pens.afdolash.androtimz.main_activity.color_fragment.ColorFragment">
+
+    <RelativeLayout
+        android:id="@+id/rv_background2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose\nYour Color."
+            android:textSize="32sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/seguisb"/>
+
+        <ImageView
+            android:id="@+id/img_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="24dp">
+
+            <TextView
+                android:id="@+id/tv_colorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/segoe"/>
+
+            <TextView
+                android:id="@+id/tv_colorHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:fontFamily="@font/segoe"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_colorpaint"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_color"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:clipToPadding="false"/>
+
+    <RelativeLayout
+        android:id="@+id/rv_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/xd_button_gradient"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Next"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/segoe" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.pens.afdolash.androtimz.main_activity.weight_fragment.WeightFragment">
+
+    <RelativeLayout
+        android:id="@+id/rv_background2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="How Much\nPaint."
+            android:textSize="32sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:fontFamily="@font/seguisb"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_weight_0gr"
+            android:scaleType="centerCrop"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rv_1000gr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/xd_button_white"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/tv_1000gr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="1000gr"
+                android:textStyle="bold"
+                android:textColor="@color/xdColorBlue"
+                android:fontFamily="@font/segoe" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_500gr"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/xd_button_white"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:id="@+id/tv_500gr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="500gr"
+                android:textStyle="bold"
+                android:textColor="@color/xdColorBlue"
+                android:fontFamily="@font/segoe" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_make"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/xd_button_gradient"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Make"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/segoe" />
+
+    </RelativeLayout>
+
+</LinearLayout>

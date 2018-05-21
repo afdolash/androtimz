@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_clearTint"
+        android:title="Clean paint">
+        <menu>
+            <item
+                android:id="@+id/nav_clearRed"
+                android:title="Red" />
+            <item
+                android:id="@+id/nav_clearYellow"
+                android:title="Yellow" />
+            <item
+                android:id="@+id/nav_clearBlue"
+                android:title="Blue" />
+            <item
+                android:id="@+id/nav_clearWhite"
+                android:title="White" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_calibrateTint"
+        android:title="Calibrate paint" >
+        <menu>
+            <item
+                android:id="@+id/nav_calibrateRed"
+                android:title="Red" />
+            <item
+                android:id="@+id/nav_calibrateYellow"
+                android:title="Yellow" />
+            <item
+                android:id="@+id/nav_calibrateBlue"
+                android:title="Blue" />
+            <item
+                android:id="@+id/nav_calibrateWhite"
+                android:title="White" />
+        </menu>
+    </item>
+</menu>
